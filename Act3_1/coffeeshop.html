@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velvet Roast Café is a modern specialty coffee shop serving handcrafted coffee, brunch plates, fresh pastries, and cozy dine-in experiences in Manila." />
+  <title>Velvet Roast Café | Specialty Coffee, Brunch & Pastries</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a href="#home" class="brand" aria-label="Velvet Roast Café Home">
+        <img src="assets/logo.svg" alt="Velvet Roast Café logo" />
+        <span>
+          <strong>Velvet Roast</strong>
+          <small>Specialty Coffee House</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+        <button class="btn btn-small btn-primary open-order" type="button">Order Now</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Now brewing in Manila • Open daily</span>
+          <h1>Specialty coffee with a smooth, velvet finish.</h1>
+          <p>
+            Welcome to <strong>Velvet Roast Café</strong> — a cozy coffee destination for slow mornings, focused work sessions, meaningful catch-ups, and handcrafted drinks made from freshly roasted beans.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">View Best Sellers</a>
+            <a href="#visit" class="btn btn-secondary">Reserve a Table</a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Cafe highlights">
+            <article class="metric tilt-card">
+              <span>35+</span>
+              <p>coffee, brunch, and pastry selections</p>
+            </article>
+            <article class="metric tilt-card">
+              <span>7 AM</span>
+              <p>daily opening for early coffee runs</p>
+            </article>
+            <article class="metric tilt-card">
+              <span>4.9★</span>
+              <p>guest-rated ambiance and service</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="steam steam-one"></div>
+          <div class="steam steam-two"></div>
+          <div class="steam steam-three"></div>
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=85" alt="A warm cup of coffee on a café table" />
+          <div class="floating-ticket ticket-top tilt-card">
+            <small>Signature drink</small>
+            <strong>Velvet Cloud Latte</strong>
+            <span>espresso • oat milk • caramel cream</span>
+          </div>
+          <div class="floating-ticket ticket-bottom tilt-card">
+            <small>Today’s pairing</small>
+            <strong>Almond Croissant + Cold Brew</strong>
+            <span>available until 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section brand-strip" aria-label="Cafe quick services">
+      <div class="container strip-grid reveal">
+        <span>☕ Specialty Espresso</span>
+        <span>🥐 Fresh Daily Pastries</span>
+        <span>🛜 Study-Friendly Wi-Fi</span>
+        <span>🎁 Event & Gift Orders</span>
+      </div>
+    </section>
+
+    <section class="section" id="story">
+      <div class="container story-grid">
+        <div class="story-card reveal">
+          <span class="eyebrow">Our story</span>
+          <h2>Built for people who love coffee, comfort, and quiet luxury.</h2>
+          <p>
+            Velvet Roast Café started with one goal: to make specialty coffee feel warm, approachable, and memorable. Every drink is brewed with balanced flavor, every pastry is selected for a perfect pairing, and every corner is designed to feel calm without feeling plain.
+          </p>
+          <div class="story-points">
+            <div>
+              <strong>Freshly pulled shots</strong>
+              <span>Dialed in every morning for consistent espresso quality.</span>
+            </div>
+            <div>
+              <strong>Comfort-first interiors</strong>
+              <span>Soft lighting, warm wood, and velvet-inspired coffee tones.</span>
+            </div>
+            <div>
+              <strong>Community tables</strong>
+              <span>Perfect for solo work, casual meetings, or weekend catch-ups.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-stack reveal delay-1">
+          <img class="stack-main" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85" alt="Barista preparing latte art" />
+          <div class="mini-card tilt-card">
+            <span class="pulse-dot"></span>
+            <strong id="openStatus">Checking café hours...</strong>
+            <small>178 Luna Street, Sampaloc, Manila</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Menu highlights</span>
+          <h2>Signature selections for every kind of café craving.</h2>
+          <p>Choose from bold espresso drinks, creamy non-coffee blends, fresh pastries, and comforting brunch plates prepared for dine-in or pickup.</p>
+        </div>
+
+        <div class="menu-controls reveal delay-1" aria-label="Menu filters">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="coffee">Coffee</button>
+          <button class="filter-btn" type="button" data-filter="noncoffee">Non-Coffee</button>
+          <button class="filter-btn" type="button" data-filter="pastry">Pastries</button>
+          <button class="filter-btn" type="button" data-filter="brunch">Brunch</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why customers come back</span>
+          <h2>Coffee, comfort food, and cozy service in one warm place.</h2>
+          <p>Velvet Roast brings together handcrafted drinks, fresh-baked pairings, work-friendly seating, and simple preorder options for everyday café moments.</p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card tilt-card reveal">
+            <div class="icon-bubble">☕</div>
+            <h3>Signature coffee menu</h3>
+            <p>Espresso, cappuccino, Spanish latte, cold brew, and our Velvet Cloud Latte for guests who enjoy rich and smooth coffee flavors.</p>
+          </article>
+          <article class="experience-card tilt-card reveal delay-1">
+            <div class="icon-bubble">🍵</div>
+            <h3>Non-coffee favorites</h3>
+            <p>Matcha latte, Belgian chocolate, fruit tea, and cream-based coolers for customers who want something refreshing without espresso.</p>
+          </article>
+          <article class="experience-card tilt-card reveal delay-2">
+            <div class="icon-bubble">🥐</div>
+            <h3>Pastry pairings</h3>
+            <p>Butter croissants, cookies, cakes, and seasonal sweets made to pair well with both hot drinks and iced beverages.</p>
+          </article>
+          <article class="experience-card tilt-card reveal delay-3">
+            <div class="icon-bubble">🍳</div>
+            <h3>Brunch plates</h3>
+            <p>Comforting breakfast sandwiches, pasta plates, waffles, and rice meals for guests who want a fuller café dining experience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Café atmosphere</span>
+          <h2>A glimpse of the drinks, bakes, and cozy corners waiting inside.</h2>
+          <p>Explore our warm interiors, barista counter, fresh pastries, and calm seating areas made for coffee dates, study sessions, and slow afternoons.</p>
+        </div>
+
+        <div class="gallery-grid reveal delay-1">
+          <figure class="gallery-large">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85" alt="Cozy coffee shop interior" />
+            <figcaption>Soft lights, warm seats, and slow coffee moments.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=85" alt="Coffee being poured" />
+            <figcaption>Fresh pours</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1514066558159-fc8c737ef259?auto=format&fit=crop&w=900&q=85" alt="Pastry display" />
+            <figcaption>Daily bakes</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=85" alt="Matcha latte" />
+            <figcaption>Matcha bar</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=900&q=85" alt="Cafe counter" />
+            <figcaption>Barista counter</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Guest notes</span>
+          <h2>Loved for the coffee, remembered for the atmosphere.</h2>
+        </div>
+
+        <div class="testimonial-shell reveal delay-1">
+          <button class="slider-btn" type="button" id="prevTestimonial" aria-label="Previous testimonial">‹</button>
+          <article class="testimonial-card" id="testimonialCard">
+            <p id="testimonialQuote"></p>
+            <div>
+              <strong id="testimonialName"></strong>
+              <span id="testimonialRole"></span>
+            </div>
+          </article>
+          <button class="slider-btn" type="button" id="nextTestimonial" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section visit-section" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-card reveal">
+          <span class="eyebrow light">Visit Velvet Roast</span>
+          <h2>Drop by, reserve a table, or send a quick inquiry.</h2>
+          <p>
+            <strong>Address:</strong> 178 Luna Street, Sampaloc, Manila, Philippines<br />
+            <strong>Email:</strong> hello@velvetroastcafe.com<br />
+            <strong>Phone:</strong> +63 917 284 0901
+          </p>
+          <div class="hours-card">
+            <div><span>Monday – Friday</span><strong>7:00 AM – 9:00 PM</strong></div>
+            <div><span>Saturday</span><strong>8:00 AM – 10:00 PM</strong></div>
+            <div><span>Sunday</span><strong>8:00 AM – 8:00 PM</strong></div>
+          </div>
+          <div class="map-preview" aria-label="Map preview">
+            <span>📍</span>
+            <p>Near university belt cafés, co-working stops, and weekend food streets.</p>
+          </div>
+        </div>
+
+        <form class="reservation-form reveal delay-1" id="reservationForm">
+          <span class="eyebrow">Reservation & inquiry</span>
+          <h3>Book a table</h3>
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your full name" required />
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="name@email.com" required />
+          </label>
+          <div class="form-row">
+            <label>
+              Date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Guests
+              <select name="guests" required>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5+">5+ guests</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Message
+            <textarea name="message" placeholder="Tell us your preferred time, seat request, or event inquiry."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Reservation Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button class="cart-fab open-order" type="button" aria-label="Open order cart">
+    <span>🛒</span>
+    <strong id="cartCount">0</strong>
+  </button>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="Order cart" aria-hidden="true">
+    <div class="cart-head">
+      <div>
+        <span class="eyebrow">Your order</span>
+        <h3>Pickup Summary</h3>
+      </div>
+      <button class="close-cart" id="closeCart" type="button" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty. Add a menu item to begin.</p>
+    </div>
+    <div class="cart-total">
+      <span>Total</span>
+      <strong id="cartTotal">₱0</strong>
+    </div>
+    <button class="btn btn-primary checkout-btn" id="checkoutBtn" type="button">Checkout Order</button>
+  </aside>
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand footer-brand">
+          <img src="assets/logo.svg" alt="Velvet Roast Café logo" />
+          <span>
+            <strong>Velvet Roast</strong>
+            <small>Specialty Coffee House</small>
+          </span>
+        </a>
+        <p>Specialty coffee, fresh pastries, brunch plates, and cozy corners made for Manila café lovers.</p>
+      </div>
+      <div>
+        <strong>Hours</strong>
+        <p>Mon–Fri: 7AM–9PM<br />Sat: 8AM–10PM<br />Sun: 8AM–8PM</p>
+      </div>
+      <div>
+        <strong>Follow</strong>
+        <p>Instagram • Facebook • TikTok<br />@velvetroastcafe</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Velvet Roast Café. All rights reserved.</span>
+      <span>Freshly brewed daily for Manila café lovers.</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
